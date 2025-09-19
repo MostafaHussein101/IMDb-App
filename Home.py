@@ -10,9 +10,7 @@ df = df.replace("", np.nan)
 Helper.Nav_Bar() 
 
 st.title("Welcome to IMDB Top 1000 movies EDA")
-st.markdown("""
-Welcome to the **IMDB Top 1000 Movies EDA Project** 📊  
-
+st.markdown(""" 
 This project analyzes one of the most popular movie datasets containing information on the **Top 1000 IMDB-rated movies and TV shows**.  
 It includes details such as movie titles, release years, IMDB ratings, genres, directors, actors, runtime, gross earnings, audience votes, and more.  
 
