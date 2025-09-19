@@ -7,7 +7,7 @@ import plotly_express as px
 
 @st.cache_data 
 def load_data():
-    df = pd.read_csv("https://github.com/MostafaHussein101/IMDb-App/blob/main/imdb_top_1000.csv")
+    df = pd.read_csv("https://raw.githubusercontent.com/MostafaHussein101/IMDb-App/main/imdb_top_1000.csv")
     df.rename(columns={"Series_Title":"Movie Title","Released_Year":"Released Year","IMDB_Rating":"IMDB Rating","Meta_score":"Meta score","No_of_Votes":"Number of votes"},inplace=True)
     df.columns = df.columns.str.strip()
     df['Gross'] = df['Gross'].str.replace(',', '')
