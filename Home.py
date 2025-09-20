@@ -8,21 +8,23 @@ df = Helper.load_data()
 df = df.replace("", np.nan)
 
 Helper.Nav_Bar() 
-
-st.title("Welcome to IMDB Top 1000 movies EDA")
-st.markdown(""" 
-This project analyzes one of the most popular movie datasets containing information on the **Top 1000 IMDB-rated movies and TV shows**.  
-It includes details such as movie titles, release years, IMDB ratings, genres, directors, actors, runtime, gross earnings, audience votes, and more.  
-
-Using **Streamlit and Plotly**, this dashboard provides:
-- Interactive visualizations for exploring trends in ratings, votes, gross, runtime, and genres.  
-- Comparative insights into directors, actors, and certificates.  
-- Key statistics and correlations to understand what drives popularity and success in movies.  
-
-The goal of this project is to make data exploration **simple, visual, and fun** for movie lovers, researchers, and data enthusiasts alike.
-""")
-st.info("Hover to see a brief about the movie") 
-
+q1,q2 = st.columns(2)
+with q1:
+    st.title("Welcome to IMDB Top 1000 movies EDA")
+    st.markdown(""" 
+    This project analyzes one of the most popular movie datasets containing information on the **Top 1000 IMDB-rated movies and TV shows**.  
+    It includes details such as movie titles, release years, IMDB ratings, genres, directors, actors, runtime, gross earnings, audience votes, and more.  
+    
+    Using **Streamlit and Plotly**, this dashboard provides:
+    - Interactive visualizations for exploring trends in ratings, votes, gross, runtime, and genres.  
+    - Comparative insights into directors, actors, and certificates.  
+    - Key statistics and correlations to understand what drives popularity and success in movies.  
+    
+    The goal of this project is to make data exploration **simple, visual, and fun** for movie lovers, researchers, and data enthusiasts alike.
+    """)
+    st.info("Hover to see a brief about the movie") 
+with q2:
+    st.image("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTNiaTI0MTA5cnR6M2Y1bXlkYmxpdTJ1azRhZGt6MHI4Y3V5ZTRtcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/in563nYTOEkg0uZSMw/giphy.gif")
 p1,p2,p3,p4,p5,p6,p7,p8,p9,p10 = st.tabs(["Page 1","Page 2","Page 3","Page 4","Page 5","Page 6","Page 7","Page 8","Page 9","Page 10"])
 
 df['poster_html'] = df.apply(lambda row: f'<img src="{row["Poster_Link"]}" title="{row["Movie Title"]} \n Rating: ({row["IMDB Rating"]}/10) \n Genre: {row["Genre"]} \n Director: {row["Director"]}" width="200" style="border-radius: 8px;">', axis=1)
