@@ -8,7 +8,7 @@ df = Helper.load_data()
 df = df.replace("", np.nan)
 
 Helper.Nav_Bar() 
-q1,q2 = st.columns(2)
+q1,q2 = st.columns([1, 3])
 with q1:
     st.title("Welcome to IMDB Top 1000 movies EDA")
     st.markdown(""" 
