@@ -30,17 +30,17 @@ df = load_data()
 def Nav_Bar():
     x1,x2,x3,x4,x5,x6,x7 = st.columns(7)
     with x1:
-        st.page_link("Home.py", label="🏠 Home")
+        st.page_link("Home.py", label="Home")
     with x5:
-        st.page_link("pages/EDA.py", label="📊 EDA")
+        st.page_link("pages/EDA.py", label="EDA")
     with x2:
-        st.page_link("pages/Movie Details.py", label="🎭 Movie Details")
+        st.page_link("pages/Movie Details.py", label="Movie Details")
     with x4:
-        st.page_link("pages/Directors & Actors.py",label="🎥 Directors & Actors")
+        st.page_link("pages/Directors & Actors.py",label="Directors & Actors")
     with x7:
-        st.page_link("https://www.imdb.com/", label="🌐 IMDb website")
+        st.page_link("https://www.imdb.com/", label="IMDb website",icon = "https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg")
     with x3:
-        st.page_link("pages/Compare Movies.py",label = "⚖️ Compare Movies")
+        st.page_link("pages/Compare Movies.py",label = "⚖Compare Movies")
     with x6:
-        st.page_link('pages/Insights.py',label='🤔 Insights')
+        st.page_link('pages/Insights.py',label='Insights')
     st.logo(image='https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg',size="large")
