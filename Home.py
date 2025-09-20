@@ -24,7 +24,7 @@ with q1:
     """)
     st.info("Hover to see a brief about the movie") 
 with q2:
-    st.image("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTNiaTI0MTA5cnR6M2Y1bXlkYmxpdTJ1azRhZGt6MHI4Y3V5ZTRtcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/in563nYTOEkg0uZSMw/giphy.gif")
+    st.image("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHo2M3MwMzAxa3J2bnZ5bGc2c3BkZTM3OWNoNWxzdWg2OHNwMWI5YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tBvPFCFQHSpEI/giphy.gif")
 p1,p2,p3,p4,p5,p6,p7,p8,p9,p10 = st.tabs(["Page 1","Page 2","Page 3","Page 4","Page 5","Page 6","Page 7","Page 8","Page 9","Page 10"])
 
 df['poster_html'] = df.apply(lambda row: f'<img src="{row["Poster_Link"]}" title="{row["Movie Title"]} \n Rating: ({row["IMDB Rating"]}/10) \n Genre: {row["Genre"]} \n Director: {row["Director"]}" width="200" style="border-radius: 8px;">', axis=1)
