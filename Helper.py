@@ -12,6 +12,17 @@ def load_data():
     df.columns = df.columns.str.strip()
     df['Gross'] = df['Gross'].str.replace(',', '')
     df['Gross'] = df['Gross'].astype('float64')
+    st.markdown(
+    f"""
+     <style>
+     .stApp {{
+         background-image: url("https://c4.wallpaperflare.com/wallpaper/307/12/896/simple-background-black-background-minimalism-theater-wallpaper-preview.jpg");
+         background-size: cover;
+         color: white;
+     }}
+     </style>
+     """,
+    unsafe_allow_html=True)
     return df
 df = load_data() 
 
