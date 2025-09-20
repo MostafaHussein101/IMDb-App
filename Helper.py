@@ -40,7 +40,7 @@ def Nav_Bar():
     with x7:
         st.page_link("https://www.imdb.com/", label="IMDb website")
     with x3:
-        st.page_link("pages/Compare Movies.py",label = "⚖Compare Movies")
+        st.page_link("pages/Compare Movies.py",label = "Compare Movies")
     with x6:
         st.page_link('pages/Insights.py',label='Insights')
     st.logo(image='https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg',size="large")
