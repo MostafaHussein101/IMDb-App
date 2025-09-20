@@ -38,7 +38,7 @@ def Nav_Bar():
     with x4:
         st.page_link("pages/Directors & Actors.py",label="Directors & Actors")
     with x7:
-        st.page_link("https://www.imdb.com/", label="IMDb website",icon = "https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg")
+        st.page_link("https://www.imdb.com/", label="IMDb website")
     with x3:
         st.page_link("pages/Compare Movies.py",label = "⚖Compare Movies")
     with x6:
